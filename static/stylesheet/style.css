@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    font-family: sans-serif;
+}
+
+
+.container {
+    background-color: white;
+    border: 0px;
+    outline: 0px;
+    border-radius: 5px;
+    display: flex;
+}
+
+button {
+    text-align: center;
+    border-width: 0px;
+    background-color: inherit;
+    color: inherit;
+}
+
+/* desktop version */
+@media only screen and (min-width: 768px) {
+    header {
+        height: 250px;
+        background-image: url('../images/bg-desktop-light.jpg');
+    }
+
+    .main-content {
+        top: 17%;
+        width: 55%;
+    }
+
+    .top-items {
+        width: 60%;
+    }
+
+
+}
+
+/* mobile version */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 200px;
+        background-image: url('../images/bg-mobile-light.jpg');
+    }
+
+    .main-content {
+        top: 15%;
+        width: 85%;
+    }
+
+    .top-items {
+        width: 100%;
+    }
+
+
+}
+
+/* .....header starts..... */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+/* ... todo text at top */
+.todo-text {
+    font-size: 27px;
+    font-weight: 550;
+    letter-spacing: 10px;
+}
+
+/*  div box for todo text and mode btn */
+.top-items {
+    display: flex;
+    color: white;
+    align-self: center;
+    flex-direction: row;
+    padding: 0px 40px 0px 40px;
+    justify-content: space-between;
+
+}
+
+/* .....top image ends..... */
+
+
+/* Div for all absolute items start */
+
+.main-content {
+    align-self: center;
+    position: absolute;
+}
+
+/* Div for all absolute items start */
+
+/* .....D-create-todo starts..... */
+.create-todo {
+    height: 45px;
+    padding: 10px;
+    margin: 10px 0px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.create-todo-input {
+    width: 100%;
+    border-width: 0px;
+    color: inherit;
+    background-color: inherit;
+}
+
+.circle {
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    margin: 0px 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.tick {
+    border-width: 0px;
+    color: white !important;
+
+    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+/* .....D-create-todo ends..... */
+
+/* ....items div start..... */
+.items-container {
+    height: auto;
+    font-size: 13.8px;
+    font-weight: lighter;
+    align-items: center;
+    flex-direction: column;
+}
+
+.task {
+    display: flex;
+    padding: 10px;
+    border-style: solid;
+    flex-direction: row;
+    margin: 5px 0px 5px 0px;
+    border-width: 0px 0px 1px 0px;
+    justify-content: space-between;
+}
+
+.task-information {
+    display: flex;
+    flex-direction: row;
+}
+
+.line-thru {
+    text-decoration: line-through;
+}
+
+.task-Bottom {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    margin: 5px 0px 5px 0px;
+    justify-content: space-between;
+
+}
+
+/*......... items div ends....... */
+
+/* ...options starts.... */
+.options {
+    height: 45px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-weight: 300;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+
+.options>button:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+.options-color {
+    color: hsl(220, 98%, 61%);
+}
+
+/* ..options ends..*/

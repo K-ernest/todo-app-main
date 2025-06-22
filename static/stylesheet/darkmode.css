@@ -1,0 +1,50 @@
+.body-dark{
+    background-color:  hsl(235, 21%, 11%) !important; 
+    
+}
+
+/* desktop version */
+@media only screen and (min-width: 768px) {
+    .header-dark {
+        background-image: url('../images/bg-desktop-dark.jpg');
+    }
+}
+
+/* mobile version */
+@media only screen and (max-width: 768px) {
+    .header-dark{
+        background-image: url('../images/bg-mobile-dark.jpg') !important;
+    }
+    
+}
+
+.container-dark{
+    background-color:  hsl(235, 24%, 19%) !important; 
+    color: hsl(233, 14%, 35%);
+}
+
+.container-dark > .create-todo-input{
+    color: hsl(234, 39%, 85%) !important;
+
+}
+
+.container-dark > .circle{
+    background-color: inherit;
+    color: hsl(235, 24%, 19%);
+    border-color: hsl(233, 14%, 35%);
+}
+
+.items-dark > .task{
+    color: hsl(233, 14%, 35%) !important;
+    border-color: hsl(234, 11%, 52%) !important;
+}
+
+.items-dark> .task > .task-information{
+    color: hsl(234, 39%, 85%) !important;
+}
+
+.items-dark> .task > .task-information > .circle{
+    background-color: inherit;
+    color: hsl(235, 24%, 19%);
+    border-color: hsl(233, 14%, 35%);
+}

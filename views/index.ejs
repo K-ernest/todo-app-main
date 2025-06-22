@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Todo app</title>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="./javaScript/myfunctions.js"></script>
+  <!-- ........... -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./stylesheet/style.css">
+  <link rel="stylesheet" href="./stylesheet/darkmode.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<!-- ........ -->
+
+<!-- ....body starts.... -->
+
+<body>
+  <!-- ........ -->
+  <!-- ...header starts..... -->
+  <header>
+
+    <section class="top-items">
+      <article class="todo-text">TODO</article>
+      <i class="fa fa-moon-o" aria-hidden="true" id="mode-Light" onclick="toggleIcon(this), toggleBackground()"></i>
+      <i class="material-symbols-outlined" id="mode-Dark" onclick="toggleIcon(this), toggleBackground()"
+        style="display: none;">
+        light_mode
+      </i>
+    </section>
+
+  </header>
+  <!-- ...header ends.....   -->
+
+
+  <!-- ...Div for all absolute items start.. -->
+  <main class="main-content">
+    <!-- .................................. -->
+
+
+
+    <!-- ... starts ..... -->
+    <section class="create-todo container">
+      <div class="circle"></div>
+      <input type="input" id="InputBox" class="create-todo-input" placeholder="Create a new todo...">
+    </section>
+    <!-- .... ends ..... -->
+
+
+    <!-- ....items div start.. -->
+    <section class="items-container container">
+      <!-- ............ -->
+      <section class="items" id="items" style="width: 100%;">
+      </section>
+      <!-- ............ -->
+      <aside class="task-Bottom">
+        <span id="item-left" style="color: inherit;"> 0 items</span>
+        <button onclick="clearCompletedTodos()" onmouseover="this.style.color='hsl(220, 98%, 61%)';"
+          onmouseout="this.style.color='inherit';">Clear Completed</button>
+      </aside>
+      <!-- ....... -->
+    </section>
+    <!-- ....items div ends.. -->
+
+
+    <!-- ....options starts.... -->
+    <nav class="options container">
+      <button class="all options-color" id="all" onclick="allTodos()">All</button>
+      <button class="active" id="active" onclick="activeTodos()">Active</button>
+      <button class="completed" id="completed" onclick="completedTodos()">Completed</button>
+    </nav>
+    <!-- ....options ends.... -->
+
+
+    <!-- ........ -->
+    <footer style="text-align: center; color: hsl(233, 14%, 35%);">
+      Drag and drop to reorder list
+    </footer>
+
+    <!-- ........ -->
+
+    <!-- .................................. -->
+  </main>
+  <!-- ...Div for all absolute items ends.. -->
+
+
+</body>
+<!-- body ends -->
+
+</html>

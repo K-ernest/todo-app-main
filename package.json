@@ -1,0 +1,25 @@
+{
+  "name": "todo-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)",
+  "main": "javaS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K-ernest/todo-app.git"
+  },
+  "author": "k-ernest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K-ernest/todo-app/issues"
+  },
+  "homepage": "https://github.com/K-ernest/todo-app#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0"
+  }
+}
