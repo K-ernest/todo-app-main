@@ -1,5 +1,4 @@
 const express = require('express');
-const cookieParser = require('cookie-parser');
 
 // express app
 const app = express();
@@ -12,7 +11,6 @@ app.set('view engine', 'ejs');
 
 // middleware & static files
 app.use(express.static('static'));
-app.use(cookieParser())
 app.use(express.json())
 
 
