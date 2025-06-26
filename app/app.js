@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../views'))
 
 // middleware & static files
-app.use(express.static('./static'));
+app.use(express.static(path.join(__dirname, '../static')));
 app.use(express.json())
 
 
