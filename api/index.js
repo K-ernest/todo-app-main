@@ -10,7 +10,7 @@ app.listen(8080);
 app.set('view engine', 'ejs');
 
 // middleware & static files
-app.use(express.static('static'));
+app.use(express.static('./static'));
 app.use(express.json())
 
 
